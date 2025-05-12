@@ -82,7 +82,7 @@ await fetchLocation();
             </div>
 
             <img
-              src="/assets/images/miami-indoor.jpg"
+              src="/assets/images/home-card.jpg"
               alt="Miami Indoor Pool"
               class="rounded-b-lg"
             />
