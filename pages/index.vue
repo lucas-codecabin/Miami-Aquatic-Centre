@@ -48,7 +48,7 @@ await fetchLocation();
         <div class="w-[40%] py-8">
           <div class="rounded-lg shadow-lg">
             <div
-              class="p-4 flex flex-col gap-2 bg-white text-black rounded-t-lg shadow-md"
+              class="p-4 flex flex-col gap-2 bg-white text-black rounded-t-2xl shadow-md"
             >
               <div class="flex gap-4 items-center">
                 <i class="pi pi-map-marker text-sky-400"></i>
@@ -84,7 +84,7 @@ await fetchLocation();
             <img
               src="/assets/images/home-card.jpg"
               alt="Miami Indoor Pool"
-              class="rounded-b-lg"
+              class="rounded-b-2xl"
             />
           </div>
         </div>
