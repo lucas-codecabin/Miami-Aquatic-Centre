@@ -28,7 +28,7 @@ await fetchLocation();
       <div
         class="container mx-auto mt-20 justify-center items-center flex gap-16"
       >
-        <div class="w-[60%] py-8">
+        <div class="w-[70%] py-8">
           <div class="flex flex-col gap-8">
             <h1 class="text-6xl font-title font-bold text-sky-400">
               Welcome to <br />{{ location.name }}
@@ -45,7 +45,7 @@ await fetchLocation();
           </div>
         </div>
 
-        <div class="w-[40%] py-8">
+        <div class="w-[30%] py-8">
           <div class="rounded-lg shadow-lg">
             <div
               class="p-4 flex flex-col gap-2 bg-white text-black rounded-t-lg shadow-md"
