@@ -37,7 +37,7 @@ await fetchLocation();
             <NuxtLink
               to="https://maps.app.goo.gl/DKkpSGduuw6L8ZVu5"
               target="_blank"
-              class="bg-sky-400 text-white px-6 py-2 rounded w-fit self-center hover:bg-white hover:text-sky-400 transition-colors"
+              class="bg-sky-400 text-white px-6 py-2 rounded-full w-fit self-center hover:bg-white hover:text-sky-400 transition-colors"
               ><div class="flex gap-2 items-center">
                 <i class="pi pi-map-marker"></i>Directions
               </div></NuxtLink
