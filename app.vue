@@ -9,7 +9,7 @@ const fetchLocation = async () => {
   const { data: locationDetails, error } = await supabase
     .from("locations")
     .select()
-    .eq("name", "Miami Aquatic Centre")
+    .eq("id", "5d38a789-4dc8-44a0-b48d-8c06098492b4")
     .single();
 
   if (!error) {
