@@ -23,7 +23,7 @@ await fetchLocation();
 <template>
   <main>
     <section
-      class="bg-[url(/assets/images/home-banner.jpg)] flex flex-col items-center justify-center text-white text-center"
+      class="bg-gradient-to-r from-sky-950 to-sky-800 flex flex-col items-center justify-center text-white text-center"
     >
       <div
         class="container mx-auto mt-20 justify-center items-center flex gap-16"
@@ -37,7 +37,7 @@ await fetchLocation();
             <NuxtLink
               to="https://maps.app.goo.gl/DKkpSGduuw6L8ZVu5"
               target="_blank"
-              class="bg-sky-400 text-white px-6 py-2 rounded w-fit mx-auto hover:bg-white hover:text-sky-400"
+              class="bg-sky-400 text-white px-6 py-2 rounded w-fit self-center hover:bg-white hover:text-sky-400 transition-colors"
               ><div class="flex gap-2 items-center">
                 <i class="pi pi-map-marker"></i>Directions
               </div></NuxtLink
@@ -55,7 +55,7 @@ await fetchLocation();
                 <NuxtLink
                   to="https://maps.app.goo.gl/DKkpSGduuw6L8ZVu5"
                   target="_blank"
-                  ><p>
+                  ><p class="hover:text-sky-400 transition-colors">
                     {{ location.street }}, {{ location.suburb }},
                     {{ location.zip_code }}, {{ location.state }}
                   </p></NuxtLink
@@ -63,17 +63,21 @@ await fetchLocation();
               </div>
 
               <div class="flex gap-4 items-center">
-                <i class="pi pi-phone text-sky-400"></i>
-                <NuxtLink :to="`tel:${location.phone}`">{{
-                  location.phone
-                }}</NuxtLink>
+                <i class="pi pi-phone text-sky-400 transition-colors"></i>
+                <NuxtLink
+                  :to="`tel:${location.phone}`"
+                  class="hover:text-sky-400"
+                  >{{ location.phone }}</NuxtLink
+                >
               </div>
 
               <div class="flex gap-4 items-center">
                 <i class="pi pi-envelope text-sky-400"></i>
-                <NuxtLink :to="`mailto:${location.email}`">{{
-                  location.email
-                }}</NuxtLink>
+                <NuxtLink
+                  :to="`mailto:${location.email}`"
+                  class="hover:text-sky-400 transition-colors"
+                  >{{ location.email }}</NuxtLink
+                >
               </div>
             </div>
 
@@ -91,7 +95,7 @@ await fetchLocation();
       <div class="container mx-auto flex flex-col gap-8">
         <a
           id="operating-hours"
-          class="text-6xl font-title font-bold text-sky-400 scroll-mt-20"
+          class="text-5xl font-title font-bold text-sky-400 scroll-mt-20"
         >
           Operating Hours
         </a>
@@ -112,7 +116,7 @@ await fetchLocation();
       <div class="container mx-auto flex flex-col gap-8">
         <a
           id="entry-fees"
-          class="text-6xl font-title font-bold text-sky-400 scroll-mt-20"
+          class="text-5xl font-title font-bold text-sky-400 scroll-mt-20"
         >
           Entry Fees
         </a>
