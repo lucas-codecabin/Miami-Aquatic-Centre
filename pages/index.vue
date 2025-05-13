@@ -23,12 +23,12 @@ await fetchLocation();
 <template>
   <main>
     <section
-      class="bg-gradient-to-r from-sky-950 to-sky-800 flex flex-col items-center justify-center text-white text-center"
+      class="bg-gradient-to-r from-sky-950 to-sky-800 flex items-center justify-center text-white text-center"
     >
       <div
-        class="container mx-auto mt-20 justify-center items-center flex gap-16"
+        class="container mx-auto mt-20 justify-center items-center flex flex-col md:flex-row md:gap-16"
       >
-        <div class="w-[60%] py-8">
+        <div class="w-[90%] md:w-[60%] py-8">
           <div class="flex flex-col gap-8">
             <h1 class="text-6xl text-left font-title font-bold text-sky-400">
               Welcome to <br />{{ location.name }}
@@ -45,7 +45,7 @@ await fetchLocation();
           </div>
         </div>
 
-        <div class="w-[40%] py-8">
+        <div class="w-[90%] md:w-[40%] py-8">
           <div class="rounded-lg shadow-lg">
             <div
               class="p-4 flex flex-col gap-2 bg-white text-black rounded-t-2xl shadow-md"
@@ -91,7 +91,7 @@ await fetchLocation();
       </div>
     </section>
 
-    <section class="bg-stone-50 py-20">
+    <section class="bg-stone-50 py-20 w-[90%] md:w-[100%] mx-auto">
       <div class="container mx-auto flex flex-col gap-8">
         <a
           id="operating-hours"
@@ -112,7 +112,7 @@ await fetchLocation();
       </div>
     </section>
 
-    <section class="bg-stone-50 py-20">
+    <section class="bg-stone-50 py-20 w-[90%] md:w-[100%] mx-auto">
       <div class="container mx-auto flex flex-col gap-8">
         <a
           id="entry-fees"
