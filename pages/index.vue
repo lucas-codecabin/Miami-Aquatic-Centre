@@ -91,8 +91,8 @@ await fetchLocation();
       </div>
     </section>
 
-    <section class="bg-stone-50 py-20 w-[90%] md:w-[100%] mx-auto">
-      <div class="container mx-auto flex flex-col gap-8">
+    <section class="bg-stone-50 py-20">
+      <div class="container mx-auto flex flex-col gap-8 w-[90%] md:w-[100%]">
         <a
           id="operating-hours"
           class="text-5xl font-title font-bold text-sky-400 scroll-mt-20"
@@ -112,8 +112,8 @@ await fetchLocation();
       </div>
     </section>
 
-    <section class="bg-stone-50 py-20 w-[90%] md:w-[100%] mx-auto">
-      <div class="container mx-auto flex flex-col gap-8">
+    <section class="bg-stone-50 py-20">
+      <div class="container mx-auto flex flex-col gap-8 w-[90%] md:w-[100%]">
         <a
           id="entry-fees"
           class="text-5xl font-title font-bold text-sky-400 scroll-mt-20"
