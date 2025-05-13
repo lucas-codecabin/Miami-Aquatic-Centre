@@ -35,7 +35,7 @@ await fetchLocation();
             </h1>
             <p class="text-justify">{{ location.site_description }}</p>
             <NuxtLink
-              to="https://maps.app.goo.gl/DKkpSGduuw6L8ZVu5"
+              :to="`http://google.com/maps/place/${location.street},+${location.suburb}+${location.state}+${location.zip_code}`"
               target="_blank"
               class="bg-sky-400 text-white px-6 py-2 rounded-full w-fit self-center hover:bg-white hover:text-sky-400 transition-colors"
               ><div class="flex gap-2 items-center">
@@ -53,7 +53,7 @@ await fetchLocation();
               <div class="flex gap-4 items-center">
                 <i class="pi pi-map-marker text-sky-400"></i>
                 <NuxtLink
-                  to="https://maps.app.goo.gl/DKkpSGduuw6L8ZVu5"
+                  :to="`http://google.com/maps/place/${location.street},+${location.suburb}+${location.state}+${location.zip_code}`"
                   target="_blank"
                   ><p class="hover:text-sky-400 transition-colors">
                     {{ location.street }}, {{ location.suburb }},
