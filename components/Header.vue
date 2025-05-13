@@ -23,16 +23,13 @@ const items = ref([
 <template>
   <div class="sticky top-0 z-50">
     <div
-      class="card absolute top-0 left-0 w-full flex bg-white rounded-bl-full h-20 items-center"
+      class="card absolute top-0 left-0 w-full flex bg-white rounded-bl-[40px] md:rounded-bl-full h-20 items-center"
     >
       <div
         class="md:container flex items-center justify-between w-[90%] mx-auto relative"
       >
         <NuxtLink to="/"
-          ><img
-            src="/assets/images/city-logo.png"
-            alt="City Logo"
-            class="md:w-16 w-12"
+          ><img src="/assets/images/city-logo.png" alt="City Logo" class="w-16"
         /></NuxtLink>
         <Menubar
           :model="items"
