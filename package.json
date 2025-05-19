@@ -16,7 +16,6 @@
     "@primevue/forms": "^4.3.3",
     "@primevue/nuxt-module": "^4.3.3",
     "@prisma/client": "^6.8.2",
-    "@prisma/nuxt": "^0.3.0",
     "nuxt": "^3.17.1",
     "primeicons": "^7.0.0",
     "primevue": "^4.3.3",
