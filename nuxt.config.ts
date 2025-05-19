@@ -6,7 +6,7 @@ export default defineNuxtConfig({
 
   devtools: { enabled: true },
 
-  modules: ["@nuxtjs/tailwindcss", "@primevue/nuxt-module", "@prisma/nuxt"],
+  modules: ["@nuxtjs/tailwindcss", "@primevue/nuxt-module"],
 
   tailwindcss: {
     exposeConfig: true,
