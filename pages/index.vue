@@ -1,23 +1,19 @@
 <script setup>
-const supabase = useSupabaseClient();
+const location = ref(null);
 
-const location = ref("");
+const { data: locationDetails, error: locationDetailsError } = await useFetch(
+  "/api/locations"
+);
 
-const fetchLocation = async () => {
-  const { data: locationDetails, error } = await supabase
-    .from("locations")
-    .select()
-    .eq("id", "5d38a789-4dc8-44a0-b48d-8c06098492b4")
-    .single();
-
-  if (!error) {
-    location.value = locationDetails;
-  } else {
-    console.error("Error fetching location", error);
+watchEffect(() => {
+  if (locationDetailsError.value) {
+    console.error("Error fetching location:", locationDetailsError.value);
   }
-};
 
-await fetchLocation();
+  if (locationDetails.value) {
+    location.value = locationDetails.value;
+  }
+});
 </script>
 
 <template>
