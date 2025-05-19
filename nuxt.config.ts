@@ -17,6 +17,12 @@ export default defineNuxtConfig({
     redirect: false,
   },
 
+  vite: {
+    ssr: {
+      noExternal: ["@prisma/client"],
+    },
+  },
+
   tailwindcss: {
     exposeConfig: true,
     config: {
