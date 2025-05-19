@@ -6,11 +6,7 @@ export default defineNuxtConfig({
 
   devtools: { enabled: true },
 
-  modules: ["@nuxtjs/tailwindcss", "@nuxtjs/supabase", "@primevue/nuxt-module"],
-
-  supabase: {
-    redirect: false,
-  },
+  modules: ["@nuxtjs/tailwindcss", "@primevue/nuxt-module"],
 
   tailwindcss: {
     exposeConfig: true,
