@@ -6,7 +6,7 @@ export default defineNuxtConfig({
 
   devtools: { enabled: true },
 
-  modules: ["@nuxtjs/tailwindcss", "@primevue/nuxt-module"],
+  modules: ["@nuxtjs/tailwindcss", "@primevue/nuxt-module", "@prisma/nuxt"],
 
   tailwindcss: {
     exposeConfig: true,
@@ -30,6 +30,15 @@ export default defineNuxtConfig({
         options: {
           darkModeSelector: ".my-app-dark",
         },
+      },
+    },
+  },
+
+  vite: {
+    resolve: {
+      alias: {
+        ".prisma/client/index-browser":
+          "./node_modules/.prisma/client/index-browser.js",
       },
     },
   },
